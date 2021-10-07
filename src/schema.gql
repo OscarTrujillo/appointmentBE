@@ -1,0 +1,38 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Place {
+  id: String!
+  name: String!
+  address: String!
+  appointmentsPerDay: Int!
+}
+
+type Patient {
+  id: String!
+  name: String!
+  email: String!
+  dni: String!
+}
+
+type Appointment {
+  id: String!
+  state: String!
+  createdAt: Int!
+  patient: Patient!
+  date: Int
+  place: Place
+}
+
+type Query {
+  getAppointmentsByPlace(placeId: String!, date: Int): [Appointment!]!
+  getAppointmentByUser(id: String!): Appointment!
+  places: [Place!]!
+}
+
+type Mutation {
+  addAppointment(patientId: String!, placeId: String): Appointment!
+  confirmAppointment(appointmentId: String!): Appointment!
+  validateAppointment(appointmentId: String!): Appointment!
+}

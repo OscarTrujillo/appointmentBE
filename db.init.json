@@ -1,0 +1,72 @@
+{
+  "employees": [
+    {
+      "id": "a90ca009-8879-417f-946b-7cb59fda3616",
+      "name": "Alice",
+      "email": "alice@mail.com"
+    },
+    {
+      "id": "9c315565-2d09-40c5-85ec-873d6c16e58f",
+      "name": "Bob",
+      "email": "bob@mail.com"
+    }
+  ],
+  "patients": [
+    {
+      "id": "68dd5025-3c55-4a5e-80ac-53ded714bdce",
+      "name": "Darth Vader",
+      "email": "anakin@mail.com",
+      "dni": "42121231P"
+    },
+    {
+      "id": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
+      "name": "Homer Simpsons",
+      "email": "homer@mail.com",
+      "dni": "42121232P"
+    },
+    {
+      "id": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
+      "name": "Blancanieves",
+      "email": "blanca@mail.com",
+      "dni": "42121233P"
+    }
+  ],
+  "places": [
+    {
+      "id": "28b945aa-0acd-4e9b-8d77-208bb5495154",
+      "name": "Hospital",
+      "address": "carrer de Begur",
+      "appointmentsPerDay": 10
+    },
+    {
+      "id": "7699e999-5f6e-4e4a-889f-41fa639ed617",
+      "name": "El Corte Ingles",
+      "address": "Avenida de Madrid, 1",
+      "appointmentsPerDay": 10
+    },
+    {
+      "id": "36fd939e-5894-4511-a57c-64377159bcbf",
+      "name": "Isabel Zendal",
+      "address": "Calle Mayor, 22",
+      "appointmentsPerDay": 10
+    }
+  ],
+  "appointments": [
+    {
+      "id": "ed8484ee-6384-4aa8-a2c5-dcfc5f6066fe",
+      "patientId": "68dd5025-3c55-4a5e-80ac-53ded714bdce",
+      "state": "REQUESTED",
+      "createdAt": 1631958127,
+      "date": null,
+      "placeId": null
+    },
+    {
+      "id": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
+      "patientId": "68dd5025-3c55-4a5e-80ac-53ded714bdce",
+      "state": "FINISHED",
+      "createdAt": 1631958127,
+      "date": 1631958127,
+      "placeId": "28b945aa-0acd-4e9b-8d77-208bb5495154"
+    }
+  ]
+}
