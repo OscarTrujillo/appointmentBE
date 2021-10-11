@@ -19,15 +19,15 @@ type Patient {
 type Appointment {
   id: String!
   state: String!
-  createdAt: Int!
+  createdAt: Float!
   patient: Patient!
-  date: Int
+  date: Float
   place: Place
 }
 
 type Query {
   getAppointmentsByPlace(placeId: String!, date: Int): [Appointment!]!
-  getAppointmentByUser(id: String!): Appointment!
+  getAppointmentByUser(id: String!): Appointment
   places: [Place!]!
 }
 

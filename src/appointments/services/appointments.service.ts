@@ -82,8 +82,7 @@ export class AppointmentService {
       throw new Error('appointemt in a wrong state');
     }
     // todo: assign next available date
-    const today = new Date();
-    appointemt.date = new Date(today.getDate() + 1).getTime();
+    appointemt.date = Date.now();
     appointemt.state = AllowedState.InProgress;
     await db.write();
 

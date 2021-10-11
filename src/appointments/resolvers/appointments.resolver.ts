@@ -18,7 +18,7 @@ export class AppointmentResolver {
     return await this.appointmentService.getAppointmentsByPlace(args);
   }
 
-  @Query((returns) => Appointment)
+  @Query((returns) => Appointment, { nullable: true })
   async getAppointmentByUser(@Args('id') id: string) {
     return await this.appointmentService.getAppointmentByUser(id);
   }
