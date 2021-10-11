@@ -25,7 +25,7 @@
       "dni": "42121232P"
     },
     {
-      "id": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
+      "id": "06eaaa56-f2c5-4954-b6d6-b88c3fd321c7",
       "name": "Blancanieves",
       "email": "blanca@mail.com",
       "dni": "42121233P"
@@ -61,8 +61,8 @@
       "placeId": null
     },
     {
-      "id": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
-      "patientId": "68dd5025-3c55-4a5e-80ac-53ded714bdce",
+      "id": "d3411d7f-2d4c-42b3-a0e9-08aa25c9bb62",
+      "patientId": "bf0b5f24-38e4-44f5-923a-670abf0ba835",
       "state": "FINISHED",
       "createdAt": 1631958127,
       "date": 1631958127,
